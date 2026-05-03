@@ -44,10 +44,8 @@ int checkWinner() {
         return currentPlayer;
     if (board[0][2] == board[1][1] && board[1][1] == board[2][0])
         return currentPlayer;
-
-    return 0;
+        return 0;
 }
-
 void switchPlayer() {
     currentPlayer = (currentPlayer == 1) ? 2 : 1;
     currentMarker = (currentMarker == 'X') ? 'O' : 'X';
